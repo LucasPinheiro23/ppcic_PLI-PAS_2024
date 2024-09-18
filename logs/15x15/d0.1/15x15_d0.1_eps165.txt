@@ -1,0 +1,79 @@
+Translating instance to solver...
+
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Ubuntu 22.04.4 LTS")
+
+CPU model: Intel(R) Xeon(R) Gold 5120 CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 28 physical cores, 56 logical processors, using up to 28 threads
+
+Academic license 2463511 - for non-commercial use only - registered to lu___@cefet-rj.br
+Optimize a model with 20952 rows, 14604 columns and 54112 nonzeros
+Model fingerprint: 0x1038aad9
+Variable types: 1 continuous, 14603 integer (14579 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  Objective range  [3e-01, 8e-01]
+  Bounds range     [1e+00, 2e+01]
+  RHS range        [1e+00, 2e+02]
+Presolve removed 19268 rows and 13852 columns
+Presolve time: 0.23s
+Presolved: 1684 rows, 752 columns, 4896 nonzeros
+Variable types: 0 continuous, 752 integer (730 binary)
+
+Root relaxation: objective 4.535346e+00, 311 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.53535    0   27          -    4.53535      -     -    0s
+H    0     0                       6.9648010    4.53535  34.9%     -    0s
+     0     0    4.59257    0   64    6.96480    4.59257  34.1%     -    0s
+     0     0    4.66477    0  154    6.96480    4.66477  33.0%     -    0s
+     0     0    4.76075    0  232    6.96480    4.76075  31.6%     -    0s
+     0     0    4.76946    0  166    6.96480    4.76946  31.5%     -    0s
+     0     0    4.84124    0  176    6.96480    4.84124  30.5%     -    0s
+     0     0    4.84124    0  169    6.96480    4.84124  30.5%     -    0s
+H    0     0                       6.8030190    4.84124  28.8%     -    0s
+     0     2    4.84124    0  169    6.80302    4.84124  28.8%     -    0s
+H   34    58                       5.5971280    4.84124  13.5%   144    0s
+
+Cutting planes:
+  Learned: 95
+  Gomory: 5
+  Cover: 3
+  Implied bound: 98
+  Clique: 5
+  MIR: 61
+  StrongCG: 1
+  GUB cover: 1
+  Zero half: 21
+  RLT: 25
+  Relax-and-lift: 6
+  BQP: 5
+
+Explored 1390 nodes (66749 simplex iterations) in 1.47 seconds (1.09 work units)
+Thread count was 28 (of 56 available processors)
+
+Solution count 3: 5.59713 6.80302 6.9648 
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 5.597128000000e+00, best bound 5.597128000000e+00, gap 0.0000%
+----------
+Solver wallclock time (for this epsilon): 1.4715509414672852 s
+Python wallclock time (for this epsilon): 3.0035388469696045 s
+
+Total elapsed Time (since program call): 382.3840436935425 s
+--------
+Results:
+
+I = 5.5971280000000005 mA
+C = 166.0 pts
+
+Minimum Epsilon for this instance = 11
+Maximum Epsilon for this instance = 172
+Current Epsilon = 165
+
+Updated solution vectors (negative I is just optimal indicative):
+sol_I = [-0.611782,-1.061782,-1.061782,-1.061782,-1.367673,-1.511782,-1.511782,-1.817673,-2.267673,-2.573564,-2.573564,-3.329455,-3.329455,-4.391237,-5.5971280000000005]
+sol_C = [12.0,51.0,51.0,51.0,56.0,71.0,78.0,96.0,105.0,128.0,128.0,145.0,143.0,155.0,166.0]
+sol_eps = [11,22,33,44,55,66,77,88,99,110,121,132,143,154,165]
+sol_gap = [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]

@@ -1,0 +1,33 @@
+{
+    "Problem": [
+        {
+            "Lower bound": 1.367673,
+            "Name": "SAP-inst_15x15_d0.2.dat",
+            "Number of binary variables": 37395,
+            "Number of constraints": 62375,
+            "Number of continuous variables": -37394,
+            "Number of integer variables": 37442,
+            "Number of nonzeros": 150770,
+            "Number of objectives": 1,
+            "Number of solutions": 1,
+            "Number of variables": 37443,
+            "Sense": "minimize",
+            "Upper bound": 1.367673
+        }
+    ],
+    "Solution": [
+        {
+            "number of solutions": 0,
+            "number of solutions displayed": 0
+        }
+    ],
+    "Solver": [
+        {
+            "Name": "Gurobi 11.02",
+            "Status": "ok",
+            "Termination condition": "optimal",
+            "Termination message": "Model was solved to optimality (subject to tolerances), and an optimal solution is available.",
+            "Wallclock time": 1.7755241394042969
+        }
+    ]
+}

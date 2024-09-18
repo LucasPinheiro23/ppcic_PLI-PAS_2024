@@ -1,0 +1,124 @@
+Translating instance to solver...
+
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Ubuntu 22.04.4 LTS")
+
+CPU model: Intel(R) Xeon(R) Gold 5120 CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 28 physical cores, 56 logical processors, using up to 28 threads
+
+Academic license 2463511 - for non-commercial use only - registered to lu___@cefet-rj.br
+Optimize a model with 62375 rows, 37443 columns and 150770 nonzeros
+Model fingerprint: 0x8b82e0c2
+Variable types: 1 continuous, 37442 integer (37395 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  Objective range  [3e-01, 8e-01]
+  Bounds range     [1e+00, 4e+01]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 56181 rows and 34807 columns
+Presolve time: 0.65s
+Presolved: 6194 rows, 2636 columns, 20022 nonzeros
+Variable types: 0 continuous, 2636 integer (2590 binary)
+
+Root relaxation: objective 2.277181e+00, 1291 iterations, 0.05 seconds (0.06 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.27718    0  140          -    2.27718      -     -    0s
+     0     0    2.45451    0  247          -    2.45451      -     -    1s
+     0     0    2.56442    0  147          -    2.56442      -     -    1s
+     0     0    2.56442    0  264          -    2.56442      -     -    1s
+     0     0    2.57356    0  193          -    2.57356      -     -    1s
+     0     0    2.57356    0  329          -    2.57356      -     -    1s
+     0     0    2.57356    0  330          -    2.57356      -     -    1s
+H    0     0                       7.2706920    2.57356  64.6%     -    1s
+H    0     0                       6.5148010    2.57356  60.5%     -    1s
+H    0     0                       5.4530190    2.57356  52.8%     -    1s
+     0     0    2.57356    0  248    5.45302    2.57356  52.8%     -    1s
+     0     0    2.57356    0  230    5.45302    2.57356  52.8%     -    1s
+H    0     0                       4.6971280    2.57356  45.2%     -    2s
+     0     0    2.57356    0  219    4.69713    2.57356  45.2%     -    2s
+     0     0    2.57356    0  183    4.69713    2.57356  45.2%     -    2s
+H    0     0                       4.5353460    2.57356  43.3%     -    3s
+     0     0    2.57356    0  125    4.53535    2.57356  43.3%     -    3s
+H    0     0                       3.9412370    2.57356  34.7%     -    3s
+     0     0    2.57356    0  154    3.94124    2.57356  34.7%     -    3s
+     0     0    2.57356    0   85    3.94124    2.57356  34.7%     -    3s
+H    0     0                       3.6353460    2.57356  29.2%     -    3s
+     0     0    2.57356    0  231    3.63535    2.57356  29.2%     -    3s
+     0     0    2.57356    0  396    3.63535    2.57356  29.2%     -    4s
+     0     0    2.57356    0  356    3.63535    2.57356  29.2%     -    4s
+     0     0    2.59873    0  296    3.63535    2.59873  28.5%     -    4s
+     0     0    2.59873    0  226    3.63535    2.59873  28.5%     -    5s
+     0     0    2.59873    0  204    3.63535    2.59873  28.5%     -    5s
+     0     0    2.59873    0  194    3.63535    2.59873  28.5%     -    6s
+     0     0    2.59873    0  177    3.63535    2.59873  28.5%     -    6s
+     0     0    2.59873    0  229    3.63535    2.59873  28.5%     -    6s
+     0     0    2.59873    0  209    3.63535    2.59873  28.5%     -    6s
+     0     0    2.59873    0  143    3.63535    2.59873  28.5%     -    7s
+     0     0    2.59873    0  261    3.63535    2.59873  28.5%     -    7s
+H    0     0                       3.3294550    2.59873  21.9%     -    7s
+     0     0    2.59873    0  197    3.32946    2.59873  21.9%     -    7s
+     0     0    2.59873    0  164    3.32946    2.59873  21.9%     -    7s
+     0     2    2.59873    0  164    3.32946    2.59873  21.9%     -    8s
+    86   103    2.70116    6  293    3.32946    2.59873  21.9%   386   13s
+   114   126    2.59873    7  313    3.32946    2.59873  21.9%   353   16s
+H  137   126                       3.3294550    2.59873  21.9%   327   16s
+  1835   848     cutoff   23         3.32945    2.59873  21.9%   146   20s
+  5660  2078    3.08248   17  335    3.32945    2.75191  17.3%   152   25s
+  5939  2084    3.26515   20  333    3.32945    2.75191  17.3%   152   30s
+  6346  2135    2.78642   22  264    3.32945    2.75191  17.3%   155   35s
+  6524  2094 infeasible   24         3.32945    2.75191  17.3%   155   40s
+H 6526  1989                       3.3294548    2.75191  17.3%   155   40s
+H 6603  1865                       3.3294548    2.75191  17.3%   155   44s
+  6605  1883    2.75191   19  353    3.32945    2.75191  17.3%   155   45s
+  7683  1818    2.99870   33  173    3.32945    2.75191  17.3%   159   52s
+  8508  1795    2.75191   22  284    3.32945    2.75191  17.3%   159   55s
+ 11418  1489    3.04118   26  310    3.32945    2.79068  16.2%   160   60s
+ 12781  1643    3.13525   30  136    3.32945    2.84059  14.7%   159   67s
+ 14834  1806    3.28324   35  291    3.32945    2.91537  12.4%   156   70s
+ 18419  1290    3.25683   29  206    3.32945    3.06418  7.97%   153   75s
+ 20240   977    3.22285   28   99    3.32945    3.14422  5.56%   150   80s
+
+Cutting planes:
+  Learned: 288
+  Gomory: 3
+  Cover: 14
+  Implied bound: 231
+  Projected implied bound: 3
+  Clique: 20
+  MIR: 37
+  Flow cover: 49
+  Inf proof: 1
+  Zero half: 41
+  RLT: 209
+  Relax-and-lift: 13
+  BQP: 5
+
+Explored 22168 nodes (3241573 simplex iterations) in 82.10 seconds (89.82 work units)
+Thread count was 28 (of 56 available processors)
+
+Solution count 10: 3.32945 3.32945 3.32945 ... 6.5148
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 3.329455000000e+00, best bound 3.329455000000e+00, gap 0.0000%
+----------
+Solver wallclock time (for this epsilon): 82.10025095939636 s
+Python wallclock time (for this epsilon): 86.75872731208801 s
+
+Total elapsed Time (since program call): 610.3294205665588 s
+--------
+Results:
+
+I = 3.329455 mA
+C = 140.0 pts
+
+Minimum Epsilon for this instance = 14
+Maximum Epsilon for this instance = 221
+Current Epsilon = 140
+
+Updated solution vectors (negative I is just optimal indicative):
+sol_I = [-0.9176730000000001,-1.367673,-1.367673,-1.367673,-1.817673,-1.817673,-2.267673,-2.573564,-2.573564,-3.329455]
+sol_C = [16.0,51.0,52.0,56.0,86.0,90.0,98.0,112.0,126.0,140.0]
+sol_eps = [14,28,42,56,70,84,98,112,126,140]
+sol_gap = [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
