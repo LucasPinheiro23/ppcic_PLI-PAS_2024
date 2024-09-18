@@ -1,0 +1,107 @@
+Translating instance to solver...
+
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Ubuntu 22.04.4 LTS")
+
+CPU model: Intel(R) Xeon(R) Gold 5120 CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 28 physical cores, 56 logical processors, using up to 28 threads
+
+Academic license 2463511 - for non-commercial use only - registered to lu___@cefet-rj.br
+Optimize a model with 643765 rows, 335123 columns and 1443544 nonzeros
+Model fingerprint: 0xb90a0bea
+Variable types: 1 continuous, 335122 integer (334960 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  Objective range  [3e-01, 8e-01]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 2e+02]
+Presolve removed 322162 rows and 224922 columns (presolve time = 5s) ...
+Presolve removed 322562 rows and 225322 columns (presolve time = 10s) ...
+Presolve removed 610682 rows and 321202 columns
+Presolve time: 10.82s
+Presolved: 33083 rows, 13921 columns, 102081 nonzeros
+Variable types: 0 continuous, 13921 integer (13760 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex (primal and dual model)
+Showing primal log only...
+
+Root relaxation presolved: 32915 rows, 13594 columns, 100614 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.0589100e-01   3.356250e+01   1.847930e+08     13s
+Concurrent spin time: 0.03s
+
+Solved with dual simplex
+
+Root relaxation: objective 2.447128e+00, 652 iterations, 0.21 seconds (0.08 work units)
+Total elapsed time = 13.00s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.44713    0   50          -    2.44713      -     -   13s
+     0     0    2.44713    0   43          -    2.44713      -     -   14s
+     0     0    2.44713    0   46          -    2.44713      -     -   14s
+     0     0    2.44713    0   47          -    2.44713      -     -   14s
+     0     0    2.44713    0   49          -    2.44713      -     -   14s
+     0     0    2.44713    0   43          -    2.44713      -     -   15s
+     0     0    2.44713    0   54          -    2.44713      -     -   15s
+     0     0    2.44713    0   12          -    2.44713      -     -   15s
+     0     0    2.44713    0   15          -    2.44713      -     -   15s
+     0     0    2.44713    0   12          -    2.44713      -     -   15s
+     0     0    2.44713    0   15          -    2.44713      -     -   15s
+     0     0    2.44713    0   14          -    2.44713      -     -   16s
+     0     0    2.44713    0   16          -    2.44713      -     -   16s
+     0     0    2.44713    0   17          -    2.44713      -     -   16s
+     0     0    2.44713    0   16          -    2.44713      -     -   16s
+     0     0    2.44713    0   14          -    2.44713      -     -   23s
+     0     0    2.44713    0   47          -    2.44713      -     -   24s
+     0     0    2.44713    0   26          -    2.44713      -     -   24s
+     0     0    2.44713    0    2          -    2.44713      -     -   24s
+     0     0    2.44713    0    6          -    2.44713      -     -   24s
+H    0     0                       3.9589100    2.44713  38.2%     -   24s
+H    0     0                       3.2030190    2.44713  23.6%     -   25s
+     0     0    2.44713    0    2    3.20302    2.44713  23.6%     -   25s
+H    0     0                       2.4471280    2.44713  0.00%     -   25s
+     0     0    2.44713    0    2    2.44713    2.44713  0.00%     -   26s
+
+Cutting planes:
+  Learned: 7
+  Gomory: 4
+  Cover: 1
+  Implied bound: 11
+  Clique: 4
+  MIR: 2
+  GUB cover: 2
+  Zero half: 1
+  Relax-and-lift: 2
+
+Explored 1 nodes (21270 simplex iterations) in 26.07 seconds (19.43 work units)
+Thread count was 28 (of 56 available processors)
+
+Solution count 3: 2.44713 3.20302 3.95891 
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 2.447128000000e+00, best bound 2.447128000000e+00, gap 0.0000%
+----------
+Solver wallclock time (for this epsilon): 26.104067087173462 s
+Python wallclock time (for this epsilon): 81.51172494888306 s
+
+Total elapsed Time (since program call): 1065203.1454770565 s
+--------
+Results:
+
+I = 2.4471279999999997 mA
+C = 23.0 pts
+
+Minimum Epsilon for this instance = 20
+Maximum Epsilon for this instance = 400
+Current Epsilon = 20
+
+Updated solution vectors (negative I is just optimal indicative):
+sol_I = [-2.4471279999999997]
+sol_C = [23.0]
+sol_eps = [20]
+sol_gap = [0.0]
