@@ -1,0 +1,33 @@
+{
+    "Problem": [
+        {
+            "Lower bound": 7.36570184228711,
+            "Name": "SAP-inst_15x15_d0.5.dat",
+            "Number of binary variables": 152099,
+            "Number of constraints": 303642,
+            "Number of continuous variables": -152098,
+            "Number of integer variables": 152213,
+            "Number of nonzeros": 681383,
+            "Number of objectives": 1,
+            "Number of solutions": 0,
+            "Number of variables": 152214,
+            "Sense": "minimize",
+            "Upper bound": Infinity
+        }
+    ],
+    "Solution": [
+        {
+            "number of solutions": 0,
+            "number of solutions displayed": 0
+        }
+    ],
+    "Solver": [
+        {
+            "Name": "Gurobi 11.02",
+            "Status": "aborted",
+            "Termination condition": "maxTimeLimit",
+            "Termination message": "Optimization terminated because the time expended exceeded the value specified in the TimeLimit parameter.",
+            "Wallclock time": 43200.08402299881
+        }
+    ]
+}

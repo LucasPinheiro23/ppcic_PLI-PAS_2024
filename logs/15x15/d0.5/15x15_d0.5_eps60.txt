@@ -1,0 +1,94 @@
+Translating instance to solver...
+
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Ubuntu 22.04.4 LTS")
+
+CPU model: Intel(R) Xeon(R) Gold 5120 CPU @ 2.20GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 28 physical cores, 56 logical processors, using up to 28 threads
+
+Academic license 2463511 - for non-commercial use only - registered to lu___@cefet-rj.br
+Optimize a model with 303642 rows, 152214 columns and 681383 nonzeros
+Model fingerprint: 0x42cdf85e
+Variable types: 1 continuous, 152213 integer (152099 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+05]
+  Objective range  [3e-01, 8e-01]
+  Bounds range     [1e+00, 1e+02]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 273417 rows and 139652 columns
+Presolve time: 4.15s
+Presolved: 30225 rows, 12562 columns, 89405 nonzeros
+Variable types: 0 continuous, 12562 integer (12450 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.675000e+01   0.000000e+00      6s
+    2806    1.9028460e+00   0.000000e+00   0.000000e+00      6s
+
+Root relaxation: objective 1.902846e+00, 2806 iterations, 0.36 seconds (0.32 work units)
+Total elapsed time = 6.47s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    1.90285    0  172          -    1.90285      -     -    7s
+     0     0    2.14124    0  152          -    2.14124      -     -    9s
+     0     0    2.14124    0  150          -    2.14124      -     -   10s
+     0     0    2.14124    0  225          -    2.14124      -     -   10s
+     0     0    2.14124    0  178          -    2.14124      -     -   10s
+H    0     0                      11.8413840    2.14124  81.9%     -   13s
+     0     0    2.14124    0  157   11.84138    2.14124  81.9%     -   13s
+H    0     0                       7.7383650    2.14124  72.3%     -   17s
+H    0     0                       2.2853460    2.14124  6.31%     -   17s
+     0     0    2.14124    0  152    2.28535    2.14124  6.31%     -   17s
+     0     0    2.14124    0  156    2.28535    2.14124  6.31%     -   17s
+     0     0    2.14124    0   69    2.28535    2.14124  6.31%     -   18s
+     0     0    2.14124    0  142    2.28535    2.14124  6.31%     -   18s
+     0     0    2.14124    0  108    2.28535    2.14124  6.31%     -   18s
+     0     0    2.14124    0   66    2.28535    2.14124  6.31%     -   18s
+     0     0    2.14124    0  151    2.28535    2.14124  6.31%     -   18s
+     0     0    2.14124    0  106    2.28535    2.14124  6.31%     -   18s
+     0     0    2.14124    0  119    2.28535    2.14124  6.31%     -   19s
+     0     0    2.14124    0  107    2.28535    2.14124  6.31%     -   19s
+     0     0    2.14124    0   97    2.28535    2.14124  6.31%     -   19s
+     0     2    2.14124    0   92    2.28535    2.14124  6.31%     -   19s
+     4     5    2.14124    0  100    2.28535    2.14124  6.31%   243   20s
+
+Cutting planes:
+  Learned: 19
+  Gomory: 27
+  Implied bound: 30
+  Projected implied bound: 1
+  MIR: 18
+  Flow cover: 20
+  Zero half: 32
+  RLT: 53
+  Relax-and-lift: 1
+
+Explored 6 nodes (45312 simplex iterations) in 20.61 seconds (14.68 work units)
+Thread count was 28 (of 56 available processors)
+
+Solution count 3: 2.28535 7.73836 11.8414 
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 2.285346000000e+00, best bound 2.285346000000e+00, gap 0.0000%
+----------
+Solver wallclock time (for this epsilon): 20.64774203300476 s
+Python wallclock time (for this epsilon): 44.54238247871399 s
+
+Total elapsed Time (since program call): 102341.2013721466 s
+--------
+Results:
+
+I = 2.285346 mA
+C = 64.0 pts
+
+Minimum Epsilon for this instance = 15
+Maximum Epsilon for this instance = 225
+Current Epsilon = 60
+
+Updated solution vectors (negative I is just optimal indicative):
+sol_I = [-1.835346,-1.835346,-2.285346,-2.285346]
+sol_C = [21.0,30.0,54.0,64.0]
+sol_eps = [15,30,45,60]
+sol_gap = [0.0,0.0,0.0,0.0]
